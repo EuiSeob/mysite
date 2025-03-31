@@ -366,7 +366,7 @@
         const ctx = document.getElementById('myChart')
         // eslint-disable-next-line no-unused-vars
         const myChart = new Chart(ctx, {
-          type: 'bar',
+          type: 'line',
           data: {
             // x축 데이터터
             labels: {{x_data | tojson}},
@@ -401,7 +401,7 @@
       const ctx2 = document.getElementById('myChart2')
       // eslint-disable-next-line no-unused-vars
       const myChart2 = new Chart(ctx2, {
-        type: 'line',
+        type: 'bar',
         data: {
           // x축 데이터
           labels: {{x_data | tojson}},

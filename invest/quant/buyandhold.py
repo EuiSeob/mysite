@@ -18,7 +18,7 @@ def buyandhold(
     print(_end)
     print(_col)
     print("바이앤홀드 df : ", len(result))
-
+    result['trade'] = 'buy'
     # 일별 수익율 컬럼을 생성 
     result['rtn'] = (result[_col].pct_change() + 1).fillna(1)
     # 누적 수익율 컬럼을 생성
