@@ -1,4 +1,4 @@
-# 프레임워크 로드 
+# Framework 로드 
 from flask import Flask, request, render_template, url_for, redirect, session
 import pandas as pd
 import invest
